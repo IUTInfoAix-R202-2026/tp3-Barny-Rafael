@@ -3,6 +3,7 @@ package fr.univ_amu.iut.exercice4;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
 /**
  * Contrôleur de la vue {@code CoquilleAccueilView.fxml}.
@@ -73,6 +74,7 @@ public class CoquilleAccueilController {
   private void onQuitter() {
     // TODO exercice 4 : fermer la fenêtre courante.
     // On récupère le Stage via la Scene du labelTitre, puis on appelle close().
-
+    Stage stage = (Stage) labelTitre.getScene().getWindow();
+    stage.close();
   }
 }
