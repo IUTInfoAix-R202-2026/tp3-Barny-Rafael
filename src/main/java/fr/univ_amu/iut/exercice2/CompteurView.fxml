@@ -52,7 +52,7 @@
           <Insets top="20" right="20" bottom="20" left="20" />
      </padding>
      <Label fx:id="labelCompteur" text="0" style="-fx-font-weight: bold; -fx-font-size: 48px" />
-     <HBox>
+     <HBox spacing="10" alignment="CENTER">
           <Button fx:id="boutonDecrementer" text="−" onAction="#decrementer" />
           <Button fx:id="boutonIncrementer" text="+" onAction="#incrementer" />
      </HBox>
