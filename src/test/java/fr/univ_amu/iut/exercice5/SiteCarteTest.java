@@ -35,7 +35,7 @@ class SiteCarteTest {
     stage.show();
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(1)
   void le_numero_de_carre_est_affiche_dans_la_carte(FxRobot robot) {
@@ -46,7 +46,7 @@ class SiteCarteTest {
         .isEqualTo("Carré 640380");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(2)
   void le_nom_convivial_est_affiche_dans_la_carte(FxRobot robot) {
@@ -57,7 +57,7 @@ class SiteCarteTest {
         .isEqualTo("📍 Étang de la Tuilière");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(3)
   void les_compteurs_de_points_d_ecoute_et_de_passages_sont_affiches(FxRobot robot) {
@@ -76,7 +76,7 @@ class SiteCarteTest {
         .contains("7 passages");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(4)
   void la_carte_avec_moins_de_sept_jours_affiche_un_badge_vert(FxRobot robot) {
