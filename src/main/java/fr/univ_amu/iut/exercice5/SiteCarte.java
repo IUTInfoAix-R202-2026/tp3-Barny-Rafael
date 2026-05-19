@@ -141,11 +141,17 @@ public class SiteCarte extends HBox {
     // - sinon : texte "Il y a Nj", classe "badge-cold"
     labelBadge.getStyleClass().removeAll("badge-fresh", "badge-stale", "badge-cold");
     if (jours < 0) {
-      labelBadge.setText("il y a " + jours + "j");
+      labelBadge.setText("Jamais utilisé");
       labelBadge.getStyleClass().add("badge-cold");
     } else if (jours < 7) {
-      labelBadge.setText("Jamais utilisé");
+      labelBadge.setText("Il y a " + jours + "j");
       labelBadge.getStyleClass().add("badge-fresh");
+    } else if (jours <= 30) {
+      labelBadge.setText("Il y a " + jours + "j");
+      labelBadge.getStyleClass().add("badge-stale");
+    } else {
+      labelBadge.setText("Il y a " + jours + "j");
+      labelBadge.getStyleClass().add("badge-cold");
     }
   }
 
